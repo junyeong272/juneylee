@@ -1,0 +1,100 @@
+		ORG		0000H
+
+LED		EQU		R0	
+CNT1	EQU		20H				;CNT1: 쌓인 LED를 제외하고 이동할 수 있는 LED의 개수(8개->7개->...->0개)
+CNT2	EQU		21H				;CNT2: 쌓이지 않은 LED의 개수(8개->7개->...->0개)
+NUM		EQU		22H				;NUM: 쌓인 LED의 개수(0개->1개->...->8개)
+
+		MOV		P2,#00000011B	;P2.0,P2.1(SW0,1)을 입력포트로 사용		
+		MOV		LED,#0FEH		;LED 기본값 설정
+		
+		;SW1:SW0 
+		;11(OFF,OFF)-> ROTATE_LEFT
+		;10(OFF,ON)	-> ROTATE_RIGHT
+		;01(ON,OFF)	-> STACK_LEFT
+		;00(ON,ON)	-> STACK_RIGHT		
+		
+CC:		JNB		P2.1,STACK		;SW1 ON->STACK
+		SJMP	ROTATE			;SW1 OFF->ROTATE
+		
+;----------------------------------------------------------
+ROTATE:	
+		JNB		P2.0,R_ROTATE	;SW0 ON	->ROTATE_RIGHT
+		SJMP	L_ROTATE		;SW0 OFF->ROTATE_LEFT		
+
+L_ROTATE:
+		MOV		P1,LED			;LED 동작
+		MOV		A,LED
+		RL		A
+		MOV		LED,A
+		SJMP	CC
+R_ROTATE:
+		MOV		P1,LED			;LED 동작
+		MOV		A,LED
+		RR		A
+		MOV		LED,A
+		SJMP	CC
+		
+;---------------------------------------------------------		
+STACK:	
+		MOV		CNT2,#8
+		MOV		NUM,#0FFH
+		JNB		P2.0,R_STACK	;SW0 ON	->STACK_RIGHT
+		SJMP	L_STACK			;SW0 OFF->STACK_LEFT
+		
+L_STACK:
+		MOV		DPTR,#200H
+		MOV		LED,#0FEH		;11111110B
+		INC		NUM				
+		MOV		CNT1,CNT2
+LOOP1:	MOV		A,NUM
+		MOVC	A,@A+DPTR
+		ANL		A,LED
+		MOV		P1,A			;LED 동작
+		MOV		A,LED
+		RL		A
+		MOV		LED,A
+		
+		DJNZ	CNT1,LOOP1		
+		DJNZ	CNT2,L_STACK		
+		SJMP	CC
+
+R_STACK:
+		MOV		DPTR,#220H
+		MOV		LED,#07FH		;01111111B
+		INC		NUM
+		MOV		CNT1,CNT2
+LOOP2:	MOV		A,NUM
+		MOVC	A,@A+DPTR
+		ANL		A,LED
+		MOV		P1,A
+		MOV		A,LED
+		RR		A
+		MOV		LED,A
+		
+		DJNZ	CNT1,LOOP2
+		DJNZ	CNT2,R_STACK
+		SJMP	CC
+
+		
+		ORG		200H
+STACK_L:DB		11111111B
+		DB		01111111B
+		DB		00111111B
+		DB		00011111B
+		DB		00001111B
+		DB		00000111B
+		DB		00000011B
+		DB		00000001B
+		
+		ORG		220H
+STACK_R:DB		11111111B
+		DB		11111110B
+		DB		11111100B
+		DB		11111000B
+		DB		11110000B
+		DB		11100000B
+		DB		11000000B
+		DB		10000000B
+	
+		END

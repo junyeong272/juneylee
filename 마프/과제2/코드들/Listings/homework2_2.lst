@@ -1,0 +1,124 @@
+C51 COMPILER V9.59.0.0   HOMEWORK2_2                                                       05/31/2018 03:46:55 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE HOMEWORK2_2
+OBJECT MODULE PLACED IN .\Objects\homework2_2.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE homework2_2.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listin
+                    -gs\homework2_2.lst) TABS(2) OBJECT(.\Objects\homework2_2.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          void Delay(unsigned int);
+   4          void main(void)
+   5          {
+   6   1        unsigned char LED = 0xFE; //LED에 출력할 값을 저장하는 변수
+   7   1        unsigned char SW; //스위치의 값을 확인하는 변수
+   8   1        unsigned char i,j;
+   9   1        
+  10   1        //STACK_LEFT에서 LED가 왼쪽에 차곡차곡 쌓이도록 도와주는 역할
+  11   1        unsigned char stack_left[]={0xFF,0x7F,0x3F,0x1F,0x0F,0x07,0x03,0x01};
+  12   1        
+  13   1        //STACK_RIGHT에서 LED가 오른쪽에 차곡차곡 쌓이도록 도와주는 역할
+  14   1        unsigned char stack_right[]={0xFF,0xFE,0xFC,0xF8,0xF0,0xE0,0xC0,0x80};
+  15   1        
+  16   1        //STACK에서 LED가 이동할 수 있는 개수에 맞게 masking하여 carry값을 얻는 역할 (??)
+  17   1        unsigned char carry[]={0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
+  18   1        
+  19   1        P2=0x03; //스위치0,1번을 입력으로 사용
+  20   1        while(1) //무한 반복
+  21   1        {
+  22   2          SW=P2;    //현재 스위치 값을 SW에 저장
+  23   2          SW=SW&0x03; //masking
+  24   2          switch(SW)
+  25   2          {
+  26   3            case(0): //STACK_RIGHT, 00(on,on)
+  27   3            {
+  28   4              for(i=0;i<8;i++){       //총 8번 반복
+  29   5                LED = 0x7F;         //기본 B'01111111'
+  30   5                for(j=i;j<8;j++){     //8-i번 반복
+  31   6                  P1 = LED&stack_right[i];//이동하는 LED+쌓인 LED를 합쳐서 LED ON
+  32   6                  Delay(1);       
+  33   6                  if(LED&carry[8-i]){   //carry[]에 해당하는 비트가 1이면 (0번 비트부터~)
+  34   7                    LED = LED>>1;   //LED를 오른쪽 쉬프트하고 
+  35   7                    LED = LED|0x80;   //7번 비트를 1로 만들어줌
+  36   7                  }else         //carry[]에 해당하는 비트가 0이면 
+  37   6                    LED = LED>>1;   //LED를 오른쪽 쉬프트만 함
+  38   6                }
+  39   5                if(P2 != SW){       //스택 도중에 다른 스위치를 누르면 빠져나감
+  40   6                    LED = 0xFE;
+  41   6                    break;
+  42   6                }
+  43   5              }
+  44   4              break;
+  45   4            }
+  46   3            case(1): //STACK_LEFT, 01(on,off)
+  47   3            {
+  48   4              for(i=0;i<8;i++){       //총 8번 반복
+  49   5                LED = 0xFE;         //기본 B'11111110'
+  50   5                for(j=i;j<8;j++){     //8-i번 반복
+  51   6                  P1 = LED&stack_left[i]; //이동하는 LED+쌓인 LED를 합쳐서 LED ON
+  52   6                  Delay(1);
+  53   6                  if(LED&carry[i]){   //carry[]에 해당하는 비트가 1이면 (7번 비트부터~)
+  54   7                    LED = LED<<1;   //LED를 왼쪽 쉬프트하고 
+C51 COMPILER V9.59.0.0   HOMEWORK2_2                                                       05/31/2018 03:46:55 PAGE 2   
+
+  55   7                    LED = LED|0x01;   //0번 비트를 1로 만들어줌
+  56   7                  }else         //carry[]에 해당하는 비트가 0이면 
+  57   6                    LED = LED<<1;   //LED를 왼쪽 쉬프트만 함
+  58   6                }
+  59   5                if(P2 != SW){       //스택 도중에 다른 스위치를 누르면 빠져나감
+  60   6                    LED = 0xFE;
+  61   6                    break;
+  62   6                }
+  63   5              }
+  64   4              break;
+  65   4            }
+  66   3            case(2): //ROTATE_RIGHT, 10(off,on)
+  67   3            {
+  68   4              P1 = LED;       //LED ON
+  69   4              Delay(1);
+  70   4              if(LED&0x01){     //LED 0번 비트가 1이면
+  71   5                LED = LED>>1;   //LED를 오른쪽 쉬프트하고
+  72   5                LED = LED|0x80;   //7번 비트를 1로 만들어줌
+  73   5              }else         //LED 0번 비트가 0이면
+  74   4                LED = LED>>1;   //LED를 오른쪽 쉬프트만 함
+  75   4              break;
+  76   4            }
+  77   3            case(3): //ROTATE_LEFT, 11(off,off)
+  78   3            {
+  79   4              P1 = LED;       //LED ON
+  80   4              Delay(1);
+  81   4              if(LED&0x80){     //LED 7번 비트가 1이면
+  82   5                LED = LED<<1;   //LED를 왼쪽 쉬프트하고
+  83   5                LED = LED|0x01;   //0번 비트를 1로 만들어줌
+  84   5              }else         //LED 7번 비트가 0이면
+  85   4                LED = LED<<1;   //LED를 왼쪽 쉬프트만 함
+  86   4              break;
+  87   4            }
+  88   3          }
+  89   2        }
+  90   1      }
+  91          
+  92          void Delay(unsigned int itime)
+  93          {
+  94   1        unsigned int i,j;
+  95   1        for(i=0;i<itime;i++)
+  96   1          for(j=0;j<1275;j++);
+  97   1      }
+  98              
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    359    ----
+   CONSTANT SIZE    =     24    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      28
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

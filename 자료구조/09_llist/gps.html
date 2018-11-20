@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			html, body {height: 100%; margin: 0; padding: 0; }
+			#map { height: 100%; }
+		</style>
+	</head>
+
+	<body>
+		<div id="map"></div>
+		<script type="text/javascript">
+
+		var vertex = [
+			{lat: 35.885663, lng: 128.614200},
+			{lat: 35.886988, lng: 128.611832},
+			{lat: 35.887057, lng: 128.610213},
+			{lat: 35.887085, lng: 128.609089},
+			{lat: 35.888741, lng: 128.609344},
+			{lat: 35.890204, lng: 128.609753},
+			{lat: 35.891764, lng: 128.609924},
+			{lat: 35.892413, lng: 128.609242}
+		];
+
+		var markers = [];
+		var map;
+
+		var arcs1 = [
+			[{lat: 35.885663, lng: 128.614200}, {lat: 35.886988, lng: 128.611832}],
+			[{lat: 35.886988, lng: 128.611832}, {lat: 35.887057, lng: 128.610213}],
+			[{lat: 35.887057, lng: 128.610213}, {lat: 35.887085, lng: 128.609089}],
+			[{lat: 35.887085, lng: 128.609089}, {lat: 35.888741, lng: 128.609344}],
+			[{lat: 35.888741, lng: 128.609344}, {lat: 35.890204, lng: 128.609753}],
+			[{lat: 35.890204, lng: 128.609753}, {lat: 35.891764, lng: 128.609924}],
+			[{lat: 35.891764, lng: 128.609924}, {lat: 35.892413, lng: 128.609242}]
+		];
+
+		var paths = [
+			{lat: 35.885663, lng: 128.614200},
+			{lat: 35.886988, lng: 128.611832},
+			{lat: 35.887057, lng: 128.610213},
+			{lat: 35.887085, lng: 128.609089},
+			{lat: 35.888741, lng: 128.609344},
+			{lat: 35.890204, lng: 128.609753},
+			{lat: 35.891764, lng: 128.609924},
+			{lat: 35.892413, lng: 128.609242}
+		];
+
+		function initMap() {
+			var mylatlng = new google.maps.LatLng(35.892413, 128.609242);
+			var mapOptions = {
+				zoom: 16,
+				center: mylatlng
+			};
+
+			map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+			for (var i = 0; i < arcs1.length; i++) {
+				var poly = new google.maps.Polyline({
+					path: arcs1[i],
+					strokeColor: '#0000FF',
+					strokeWeight: 5
+				});
+			poly.setMap(map);
+
+			}
+
+			var path = new google.maps.Polyline({
+				path: paths,
+				strokeColor: '#FFFFFF',
+				strokeWeight: 3
+			});
+			path.setMap(map);
+
+			for (var i = 0; i < vertex.length; i++) {
+				addMarker(vertex[i]);
+			}
+
+			showMarkers();
+		}
+
+		function addMarker(location) {
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+			markers.push(marker);
+		}
+
+		function setMapOnAll(map) {
+			for (var i = 0; i < markers.length; i++) {
+				markers[i].setMap(map);
+			}
+		}
+
+		function showMarkers() {
+			setMapOnAll(map);
+		}
+		</script>
+
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQVAUMDX-HrPI1jEPybVreQPF-kXrWbF4&callback=initMap">
+		</script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+C51 COMPILER V9.59.0.0   HOMEWORK2_1                                                       06/01/2018 01:11:19 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE HOMEWORK2_1
+OBJECT MODULE PLACED IN .\Objects\homework2_1.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE homework2_1.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listin
+                    -gs\homework2_1.lst) TABS(2) OBJECT(.\Objects\homework2_1.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          #define FND P1 //7-segment
+   4          #define SW  P2 //switch
+   5          
+   6          sbit set0=P0^7;
+   7          sbit set1=P3^3;
+   8          sbit set2=P3^4;
+   9          
+  10          void Delay(unsigned int);
+  11          void main(void){
+  12   1        SW=0xFF;  //sw를 입력으로 사용
+  13   1        
+  14   1        set0=1;   //DISP0을 사용하기 위한 조건설정
+  15   1        set1=0;
+  16   1        set2=0;
+  17   1        
+  18   1        while(1){
+  19   2          unsigned char count;  //count 변수
+  20   2          unsigned char sum=0;  //1의 개수 합을 저장하는 변수
+  21   2          unsigned char data1=0;  //sw의 값을 저장하는 변수
+  22   2          
+  23   2          //look up table 기능 (0~9를 FND에 표시하기 위한 값)
+  24   2          unsigned char table[]={0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xD8,0x80};
+  25   2          
+  26   2          data1=SW;
+  27   2          for(count=0;count<8;count++){
+  28   3            if(data1&0x01) //data의 0번 비트의 값을 확인해서 1이면 sum 증가
+  29   3              sum++;
+  30   3            data1=data1>>1; //data의 값을 shift right
+  31   3          }
+  32   2          FND = table[sum]; //FND에 1의 개수를 출력
+  33   2          Delay(1);
+  34   2        }
+  35   1      }   
+  36            
+  37          void Delay(unsigned int itime)
+  38          {
+  39   1        unsigned int i,j;
+  40   1        for(i=0;i<itime;i++)
+  41   1          for(j=0;j<1275;j++);
+  42   1      }
+  43              
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    114    ----
+   CONSTANT SIZE    =      9    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      12
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+C51 COMPILER V9.59.0.0   HOMEWORK2_1                                                       06/01/2018 01:11:19 PAGE 2   
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
