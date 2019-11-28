@@ -46,6 +46,7 @@
 
 java programming 수업을 들으면서 수행했던 Term project 파일들이 들어있다. Term Project로 소비자(고객)의 입장에서 가상으로 편의점을 이용하는데 필요한 기능들을 구현하여 편의점 이용/물건 구매를 할 수 있도록 만들고, 관리자(점장)의 입장에서 편의점을 운용하는데 필요한 기능들을 구현해 물품들을 관리/운영 할 수 있도록 만드는 것이 목표였습니다.
 
+
 ## **4.SoC설계 및 프로그래밍**
 
 학부 SoC설계 및 프로그래밍 수업을 들으며 텀프로젝트 수행 코드
@@ -54,9 +55,10 @@ java programming 수업을 들으면서 수행했던 Term project 파일들이 �
 -PWM제어 IP를 구현하고 GPIO핀에 피에조 부저를 연결해 PWM제어를 통해 음을 조절해 정시 알람 구현
 -TEXT_LCD에 연/월/일 표시기능 추가
 
-  ### 정리
-  보드의 PL영역에 베릴로그를 통해 PWM IP, PUSH Button IP(인터럽트 포함), Text_LCD IP,         SEVEN_SEGMENT IP를 구현하여 AXI4를 통해 PS영역과 연결  --> PS영역에서 C언어로 디지털 시계     기능을 구현함
- 
+### 정리
+보드의 PL영역에 베릴로그를 통해 PWM IP, PUSH Button IP(인터럽트 포함), Text_LCD IP, SEVEN_SEGMENT IP를 구현하여 AXI4를 통해 PS영역과 연결  --> PS영역에서 C언어로 디지털 시계기능을 구현함
+
+
 ## **5.종합설계프로젝트1**
 
 2019년도 1학기에 조정훈 교수님의 종합설계프로젝트1을 수행하면서 작성한 자율주행 코드
@@ -75,6 +77,7 @@ java programming 수업을 들으면서 수행했던 Term project 파일들이 �
 
   ### ros_tutorials_topic 폴더
   1. topic_subscriber.cpp
+  
   라즈베리파이로 RC카의 서보모터,dc모터 제어를 통해 차량을 구동하는 차량 제어 코드
   client.cpp에서 가공된 정보를 ROS통신으로 전달받고, 이 값을 PID제어로 직진주행 수행 
   
