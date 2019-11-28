@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2014.4_63036 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jun 21 11:01:04 2019
+# Process ID: 5384
+# Log file: D:/2014104101/Termproj/vivado.log
+# Journal file: D:/2014104101/Termproj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/2014104101/Termproj/Termproj.xpr
+open_bd_design {D:/2014104101/Termproj/Termproj.srcs/sources_1/bd/system/system.bd}
+launch_sdk -workspace D:/2014104101/Termproj/Termproj.sdk -hwspec D:/2014104101/Termproj/Termproj.sdk/system_wrapper.hdf

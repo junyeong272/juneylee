@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Oct 29 16:53:22 2019
+# Process ID: 5204
+# Current directory: C:/Users/창현/Desktop/리준영/soc 코드/Termproj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28624 C:\Users\창현\Desktop\리준영\soc 코드\Termproj\Termproj.xpr
+# Log file: C:/Users/창현/Desktop/리준영/soc 코드/Termproj/vivado.log
+# Journal file: C:/Users/창현/Desktop/리준영/soc 코드/Termproj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/창현/Desktop/리준영/soc 코드/Termproj/Termproj.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/창현/Desktop/리준영/soc 코드/Termproj/Termproj.srcs/sources_1/bd/system/system.bd}

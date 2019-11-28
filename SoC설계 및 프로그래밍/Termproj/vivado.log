@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Oct 29 16:53:22 2019
+# Process ID: 5204
+# Current directory: C:/Users/창현/Desktop/리준영/soc 코드/Termproj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28624 C:\Users\창현\Desktop\리준영\soc 코드\Termproj\Termproj.xpr
+# Log file: C:/Users/창현/Desktop/리준영/soc 코드/Termproj/vivado.log
+# Journal file: C:/Users/창현/Desktop/리준영/soc 코드/Termproj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/창현/Desktop/리준영/soc 코드/Termproj/Termproj.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/창현/Desktop/리준영/soc 코드/soc_test/test_push/test_push.srcs/constrs_1/imports/digital_clock_files2/top.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/창현/Desktop/리준영/soc 코드/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_processing_system7_0_0
+system_auto_pc_0
+system_xbar_0
+system_processing_system7_0_axi_periph_0
+system_rst_processing_system7_0_50M_0
+
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 730.133 ; gain = 87.023
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/창현/Desktop/리준영/soc 코드/Termproj/Termproj.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:seven_seg:1.0 - seven_seg_0
+Adding cell -- xilinx.com:user:textlcd:1.0 - textlcd_0
+Adding cell -- xilinx.com:user:pushbutton:1.0 - pushbutton_0
+Adding cell -- xilinx.com:user:pwm_gen:2.0 - pwm_gen_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/Users/창현/Desktop/리준영/soc 코드/Termproj/Termproj.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 833.152 ; gain = 76.273
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 00:48:47 2019...

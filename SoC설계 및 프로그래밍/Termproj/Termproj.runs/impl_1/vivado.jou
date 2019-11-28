@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4_63036 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Jun 20 18:24:21 2019
+# Process ID: 6528
+# Log file: D:/2014104101/Termproj/Termproj.runs/impl_1/system_wrapper.vdi
+# Journal file: D:/2014104101/Termproj/Termproj.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

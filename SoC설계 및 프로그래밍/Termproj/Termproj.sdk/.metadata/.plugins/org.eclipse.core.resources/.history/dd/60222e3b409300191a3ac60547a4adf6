@@ -1,0 +1,579 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_printf.h"
+#include "textlcd.h"
+#include "seven_seg.h"
+#include "pushbutton.h"
+#include "xil_types.h"
+#include "xiicps.h"
+#include "pwm_gen.h"
+#include <unistd.h>
+
+#include "xscugic.h"
+
+/************************** Constant Definitions *****************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC_DEVICE_INT_ID	61
+
+#define IIC_SLAVE_ADDR 0x51
+#define IIC_SCLK_RATE 100000
+#define DAY		0x05
+#define	MONTH	0x07
+#define	YEAR	0x08
+#define HOUR	0x04
+#define MIN		0x03
+#define SEC		0x02
+#define CYCLE	500000
+/**************************** Type Definitions *******************************/
+
+/***************** Macros (Inline Functions) Definitions *********************/
+
+/************************** Function Prototypes ******************************/
+int ScuGicExample(u16 DeviceId);
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
+void DeviceDriverHandler(void *CallbackRef);
+
+void WriteTLCDReg(char *pRegVal, int val);
+char bin2ascii(char bin);
+int ReadRTC(XIicPs Iic, u8 *SendBuffer, u8 *RecvBuffer, char set, int length);
+int WriteRTC(XIicPs Iic, u8 *WriteBuffer, char set, char sec);
+int CalRTC(XIicPs Iic, u8 *SendBuffer, u8 *ReadBuffer, char set, int length);
+void DateTLCDReg(char *pRegVal, char *text);
+
+/************************** Variable Definitions *****************************/
+
+XScuGic InterruptController; 	     /* Instance of the Interrupt Controller */
+static XScuGic_Config *GicConfig;    /* The configuration parameters of the
+                                       controller */
+
+volatile static int InterruptProcessed = FALSE;
+
+volatile char mode = 0;
+volatile char hour = 0;
+volatile char min = 0;
+volatile char sec = 0;
+
+
+/*****************************************************************************/
+
+int main(void)
+{
+	int Status;
+
+	XIicPs Iic;
+	int IicStatus;
+	u8 *SendBuffer;	/**< Buffer for Transmitting Data */
+	u8 RecvBuffer[7];	/**< Buffer for Receiving Data */
+	int SegReg;
+	int CalReg;
+	char TlcdReg_upline[16];
+	char TlcdReg_downline[16];
+	char TlcdReg_upline_temp[16];
+	char* text;
+
+	int	i;
+	int wait;
+
+	Status = ScuGicExample(INTC_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	/*IicStatus = WriteRTC(Iic, SendBuffer, MONTH, 0x06);
+	if(IicStatus != XST_SUCCESS)
+	{
+		return XST_FAILURE;
+	}
+	/*
+	IicStatus = WriteRTC(Iic, SendBuffer, DAY, 0x20);
+	if(IicStatus != XST_SUCCESS)
+	{
+		return XST_FAILURE;
+	}*/
+	PWM_GEN_mWriteReg(XPAR_PWM_GEN_0_S00_AXI_BASEADDR, PWM_GEN_S00_AXI_SLV_REG0_OFFSET, CYCLE);
+	while(TRUE)
+	{
+		u8 *WriteBuffer = (u8*)malloc(sizeof(u8));
+		if(mode == 0){
+			PWM_GEN_mWriteReg(XPAR_PWM_GEN_0_S00_AXI_BASEADDR, PWM_GEN_S00_AXI_SLV_REG1_OFFSET, 40000);
+			IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+			if(IicStatus != XST_SUCCESS)
+			{
+				return XST_FAILURE;
+			}
+			SegReg = ((RecvBuffer[2]&0x3F)<<24) | ((RecvBuffer[1]&0x7F)<<12) | (RecvBuffer[0]&0x7F) | 0x00A00A00;
+			CalReg = ((RecvBuffer[6]&0xff)<<24)| ((RecvBuffer[5]&0x1F)<<12)|(RecvBuffer[3]&0x3f);
+			hour = RecvBuffer[2]&0x3F;
+			min = RecvBuffer[1]&0x7F;
+			sec = RecvBuffer[0]&0x7F;
+			SEVEN_SEG_mWriteReg(XPAR_SEVEN_SEG_0_S00_AXI_BASEADDR, SEVEN_SEG_S00_AXI_SLV_REG0_OFFSET, SegReg);
+			//strncpy(TlcdReg_upline, "Digital Clock   ", 16);
+			WriteTLCDReg(TlcdReg_upline, CalReg);
+			TlcdReg_upline[2] = 0x2E;
+			TlcdReg_upline[5] = 0x2E;
+			text = "Date: ";
+			DateTLCDReg(TlcdReg_upline, text);
+			WriteTLCDReg(TlcdReg_downline, SegReg);
+			text = "Time: ";
+			DateTLCDReg(TlcdReg_downline, text);
+			for(i = 0; i < 4; i++)
+			{
+				// Coding here!
+				TEXTLCD_mWriteReg(XPAR_TEXTLCD_0_S00_AXI_BASEADDR, TEXTLCD_S00_AXI_SLV_REG0_OFFSET+4*i,(TlcdReg_upline[0+4*i]<<24) + (TlcdReg_upline[1+4*i]<<16) + (TlcdReg_upline[2+4*i]<<8) + (TlcdReg_upline[3+4*i]));
+				TEXTLCD_mWriteReg(XPAR_TEXTLCD_0_S00_AXI_BASEADDR, TEXTLCD_S00_AXI_SLV_REG4_OFFSET+4*i,(TlcdReg_downline[0+4*i]<<24) + (TlcdReg_downline[1+4*i]<<16) + (TlcdReg_downline[2+4*i]<<8) + (TlcdReg_downline[3+4*i]));
+			}
+			if(min==0 && sec==0)
+			{
+				PWM_GEN_mWriteReg(XPAR_PWM_GEN_0_S00_AXI_BASEADDR, PWM_GEN_S00_AXI_SLV_REG1_OFFSET, 50000);
+				sleep(1);
+			}
+
+		}
+		else{
+			strncpy(TlcdReg_upline_temp, "Digital Clock   ", 16);
+			strcpy(TlcdReg_downline, "Setting Mode    ");
+			if(mode == 1)
+			{
+				SegReg = ((hour & 0x3F)<<24) | 0xAAAAAA;
+				SEVEN_SEG_mWriteReg(XPAR_SEVEN_SEG_0_S00_AXI_BASEADDR, SEVEN_SEG_S00_AXI_SLV_REG0_OFFSET, SegReg);
+				IicStatus = WriteRTC(Iic, WriteBuffer, HOUR, hour);
+				if(IicStatus != XST_SUCCESS)
+				{
+					return XST_FAILURE;
+				}
+
+			}
+			else if(mode == 2)
+			{
+				SegReg = 0xAAA00000 | ((min & 0x7F)<<12) | 0xAAA;
+				SEVEN_SEG_mWriteReg(XPAR_SEVEN_SEG_0_S00_AXI_BASEADDR, SEVEN_SEG_S00_AXI_SLV_REG0_OFFSET, SegReg);
+				IicStatus = WriteRTC(Iic, WriteBuffer, MIN, min);
+				if(IicStatus != XST_SUCCESS)
+				{
+					return XST_FAILURE;
+				}
+			}
+
+			else if(mode == 3)
+			{
+				SegReg = 0xAAAAAA00 | ((sec & 0x7F));
+				SEVEN_SEG_mWriteReg(XPAR_SEVEN_SEG_0_S00_AXI_BASEADDR, SEVEN_SEG_S00_AXI_SLV_REG0_OFFSET, SegReg);
+				IicStatus = WriteRTC(Iic, WriteBuffer, SEC, sec);
+				if(IicStatus != XST_SUCCESS)
+				{
+					return XST_FAILURE;
+				}
+
+			}
+			for(i = 0; i < 4; i++)
+			{
+				// Coding here!
+				TEXTLCD_mWriteReg(XPAR_TEXTLCD_0_S00_AXI_BASEADDR, TEXTLCD_S00_AXI_SLV_REG0_OFFSET+4*i,(TlcdReg_upline_temp[0+4*i]<<24) + (TlcdReg_upline_temp[1+4*i]<<16) + (TlcdReg_upline_temp[2+4*i]<<8) + (TlcdReg_upline_temp[3+4*i]));
+				TEXTLCD_mWriteReg(XPAR_TEXTLCD_0_S00_AXI_BASEADDR, TEXTLCD_S00_AXI_SLV_REG4_OFFSET+4*i,(TlcdReg_downline[0+4*i]<<24) + (TlcdReg_downline[1+4*i]<<16) + (TlcdReg_downline[2+4*i]<<8) + (TlcdReg_downline[3+4*i]));
+			}
+
+		}
+
+		for(wait = 0; wait < 1200; wait++);
+		free(WriteBuffer);
+	}
+
+
+}
+
+/*****************************************************************************/
+/**
+
+*
+******************************************************************************/
+void DateTLCDReg(char *pRegVal, char *text)
+{
+	char temp[16];
+	int i;
+	for(i=0; i<16; i++)
+	{
+		temp[i] = pRegVal[i];
+	}
+
+	for(i=6; i<16; i++)
+	{
+		pRegVal[i] = temp[i-6];
+	}
+	strncpy(pRegVal, text, 6);
+
+}
+void WriteTLCDReg(char *pRegVal, int val)
+{
+	int		i = 0;
+	char	temp;
+
+	for(i = 0; i < 8; i++)
+	{
+		// Coding here!
+		temp = bin2ascii((val>>(28-4*i))&0x0F);
+		pRegVal[i] = temp;
+		pRegVal[i+8] = 0x20;	//0x20 = space
+	}
+}
+
+char bin2ascii(char bin)
+{
+	////////////////////
+	return (0x30|bin);
+	////////////////////
+}
+
+int WriteRTC(XIicPs Iic, u8 *WriteBuffer, char set, char val)
+{
+	int Status;
+	XIicPs_Config *Config;
+
+	Config = XIicPs_LookupConfig(XPAR_XIICPS_0_DEVICE_ID);
+	if(Config == NULL)
+	{
+		return XST_FAILURE;
+	}
+
+	Status = XIicPs_CfgInitialize(&Iic, Config, Config->BaseAddress);
+	if(Status != XST_SUCCESS)
+	{
+		return XST_FAILURE;
+	}
+
+	XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);
+
+	WriteBuffer[0] = set;
+	WriteBuffer[1] = val;
+	Status = XIicPs_MasterSendPolled(&Iic, WriteBuffer, 2, IIC_SLAVE_ADDR);
+	if(Status != XST_SUCCESS)
+	{
+		return XST_FAILURE;
+	}
+
+	while(XIicPs_BusIsBusy(&Iic))
+	{
+		/* NOP */
+	}
+
+	return XST_SUCCESS;
+
+}
+
+int ReadRTC(XIicPs Iic, u8 *SendBuffer, u8 *RecvBuffer, char set, int length)
+{
+	int				Status;
+	int 			i;
+	XIicPs_Config	*Config;
+
+	Config = XIicPs_LookupConfig(XPAR_XIICPS_0_DEVICE_ID);
+	if (Config == NULL)
+	{
+		return XST_FAILURE;
+	}
+
+	Status = XIicPs_CfgInitialize(&Iic, Config, Config->BaseAddress);
+	if (Status != XST_SUCCESS)
+	{
+		return XST_FAILURE;
+	}
+
+	XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);
+
+	*SendBuffer		= set;
+	for(i=0; i<length; i++){
+		RecvBuffer[i] = 0x00;
+	}
+
+	Status = XIicPs_MasterSendPolled(&Iic, SendBuffer, 1, IIC_SLAVE_ADDR);
+	if(Status != XST_SUCCESS)
+	{
+		return XST_FAILURE;
+	}
+
+	while(XIicPs_BusIsBusy(&Iic))
+	{
+		/* NOP */
+	}
+
+	Status = XIicPs_MasterRecvPolled(&Iic, RecvBuffer, length, IIC_SLAVE_ADDR);
+	if (Status != XST_SUCCESS)
+	{
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
+}
+
+int ScuGicExample(u16 DeviceId)
+{
+	int Status;
+
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 */
+	GicConfig = XScuGic_LookupConfig(DeviceId);
+	if (NULL == GicConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(&InterruptController, GicConfig,
+					GicConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+
+	/*
+	 * Perform a self-test to ensure that the hardware was built
+	 * correctly
+	 */
+	Status = XScuGic_SelfTest(&InterruptController);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+
+	/*
+	 * Setup the Interrupt System
+	 */
+	Status = SetUpInterruptSystem(&InterruptController);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Connect a device driver handler that will be called when an
+	 * interrupt for the device occurs, the device driver handler performs
+	 * the specific interrupt processing for the device
+	 */
+	Status = XScuGic_Connect(&InterruptController, INTC_DEVICE_INT_ID,
+			   (Xil_ExceptionHandler)DeviceDriverHandler,
+			   (void *)&InterruptController);
+
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Enable the interrupt for the device and then cause (simulate) an
+	 * interrupt so the handlers will be called
+	 */
+	XScuGic_Enable(&InterruptController, INTC_DEVICE_INT_ID);
+
+	/*
+	 *  Simulate the Interrupt
+	 */
+//	Status = XScuGic_SoftwareIntr(&InterruptController,
+//					INTC_DEVICE_INT_ID,
+//					XSCUGIC_SPI_CPU0_MASK);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+
+	/*
+	 * Wait for the interrupt to be processed, if the interrupt does not
+	 * occur this loop will wait forever
+	 */
+
+	return XST_SUCCESS;
+}
+
+/******************************************************************************/
+/**
+*
+* This function connects the interrupt handler of the interrupt controller to
+* the processor.  This function is seperate to allow it to be customized for
+* each application.  Each processor or RTOS may require unique processing to
+* connect the interrupt handler.
+*
+* @param	XScuGicInstancePtr is the instance of the interrupt controller
+*		that needs to be worked on.
+*
+* @return	None.
+*
+* @note		None.
+*
+****************************************************************************/
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr)
+{
+
+	/*
+	 * Connect the interrupt controller interrupt handler to the hardware
+	 * interrupt handling logic in the ARM processor.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			XScuGicInstancePtr);
+
+	/*
+	 * Enable interrupts in the ARM
+	 */
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+
+/******************************************************************************/
+/**
+*
+* This function is designed to look like an interrupt handler in a device
+* driver. This is typically a 2nd level handler that is called from the
+* interrupt controller interrupt handler.  This handler would typically
+* perform device specific processing such as reading and writing the registers
+* of the device to clear the interrupt condition and pass any data to an
+* application using the device driver.  Many drivers already provide this
+* handler and the user is not required to create it.
+*
+* @param	CallbackRef is passed back to the device driver's interrupt
+*		handler by the XScuGic driver.  It was given to the XScuGic
+*		driver in the XScuGic_Connect() function call.  It is typically
+*		a pointer to the device driver instance variable.
+*		In this example, we do not care about the callback
+*		reference, so we passed it a 0 when connecting the handler to
+*		the XScuGic driver and we make no use of it here.
+*
+* @return	None.
+*
+* @note		None.
+*
+****************************************************************************/
+void DeviceDriverHandler(void *CallbackRef)
+{
+	/*
+	 * Indicate the interrupt has been processed using a shared variable
+	 */
+	int buffer;
+	char temp_up = 0;
+	char temp_down = 0;
+	buffer = PUSHBUTTON_mReadReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET);
+	if(buffer == 1){
+			mode = mode+1;
+			if(mode>3)
+				mode = 0;
+
+	}
+	else if(buffer == 2){
+		switch(mode)
+		{
+			case 1:
+				temp_up = ((hour>>4)&0xF);
+				temp_down = hour & 0xF;
+				if(temp_up == 0 || temp_up == 1){
+					temp_down = temp_down + 1;
+					if(temp_down >9){
+						temp_down = 0;
+						temp_up = temp_up + 1;
+					}
+				}
+				else if(temp_up == 2){
+					temp_down = temp_down + 1;
+					if(temp_down > 3){
+						temp_down = 0;
+						temp_up = 0;
+					}
+				}
+				hour = (temp_up << 4) | temp_down;
+				break;
+			case 2:
+				temp_up = ((min>>4)&0xF);
+				temp_down = min & 0xF;
+				temp_down = temp_down + 1;
+				if(temp_down>9){
+					temp_down = 0;
+					temp_up = temp_up + 1;
+					if(temp_up>5)
+						temp_up = 0;
+				}
+				min = (temp_up << 4) | temp_down;
+				break;
+			case 3:
+				temp_up = ((sec>>4)&0xF);
+				temp_down = sec & 0xF;
+				temp_down = temp_down + 1;
+				if(temp_down>9){
+					temp_down = 0;
+					temp_up = temp_up + 1;
+					if(temp_up>5)
+						temp_up = 0;
+				}
+				sec = (temp_up << 4) | temp_down;
+				break;
+		}
+
+	}
+	else if(buffer == 4){
+		switch(mode)
+		{
+			case 1:
+				temp_up = ((hour>>4)&0xF);
+				temp_down = hour & 0xF;
+				if(temp_up == 2 || temp_up == 1){
+					if(temp_down == 0){
+						temp_down = 9;
+						temp_up = temp_up - 1;
+					}
+					else{
+						temp_down = temp_down - 1;
+					}
+				}
+				else if(temp_up == 0){
+					if(temp_down == 0){
+						temp_down = 3;
+						temp_up = 2;
+					}
+					else{
+						temp_down = temp_down - 1;
+					}
+				}
+				hour = (temp_up << 4) | temp_down;
+				break;
+			case 2:
+				temp_up = ((min>>4)&0xF);
+				temp_down = min & 0xF;
+				if(temp_down == 0){
+					temp_down = 9;
+					if(temp_up == 0){
+						temp_up = 5;
+					}
+					else
+						temp_up = temp_up - 1;
+				}
+				else{
+					temp_down = temp_down - 1;
+				}
+				min = (temp_up << 4) | temp_down;
+				break;
+			case 3:
+				temp_up = ((sec>>4)&0xF);
+				temp_down = sec & 0xF;
+				if(temp_down == 0){
+					temp_down = 9;
+					if(temp_up == 0){
+						temp_up = 5;
+					}
+					else
+						temp_up = temp_up - 0x1;
+				}
+				else{
+					temp_down = temp_down - 0x1;
+				}
+
+				sec = (temp_up << 4) | temp_down;
+				break;
+		}
+
+	}
+	PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+	InterruptProcessed = TRUE;
+}

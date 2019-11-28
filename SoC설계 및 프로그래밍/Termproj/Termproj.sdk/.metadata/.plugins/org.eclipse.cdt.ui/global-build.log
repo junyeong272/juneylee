@@ -1,0 +1,1796 @@
+18:28:09 **** Build of project ps_termproj_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pushbutton..."
+"Running Make libs in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pwm_gen..."
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling seven_seg..."
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling textlcd..."
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+18:28:23 **** Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:109:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38988	   2976	  22660	  64624	   fc70	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+18:28:37 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+18:29:03 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+18:31:37 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:109:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38988	   2976	  22660	  64624	   fc70	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+18:46:09 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:110:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39376	   2976	  22660	  65012	   fdf4	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+18:46:11 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+18:46:42 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+18:49:21 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:110:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39432	   2976	  22660	  65068	   fe2c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+18:53:38 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:110:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39420	   2976	  22660	  65056	   fe20	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+18:53:40 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+18:54:04 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+18:54:36 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+18:54:58 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:04:02 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:110:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39664	   2976	  22660	  65300	   ff14	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+19:04:05 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:04:27 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:08:19 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:110:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39676	   2976	  22660	  65312	   ff20	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+19:08:19 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:08:41 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:09:21 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:11:29 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:12:02 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+19:44:24 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:154:5: error: too many arguments to function 'strcpy'
+     strcpy(TlcdReg_downline, "Setting Time    ",16);
+     ^
+../src/helloworld.c:211:3: error: 'else' without a previous 'if'
+   else{
+   ^
+../src/helloworld.c:213:4: error: too many arguments to function 'strcpy'
+    strcpy(TlcdReg_downline, "Setting Time    ",16);
+    ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:689:29: error: 'temp_dwon' undeclared (first use in this function)
+     else if(temp_up == 0 && temp_dwon == 1){
+                             ^
+../src/helloworld.c:689:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:697:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:698:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:720:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:725:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:725:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:726:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:726:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:726:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:727:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:45:23 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:154:5: error: too many arguments to function 'strcpy'
+     strcpy(TlcdReg_downline, "Setting Time    ",16);
+     ^
+../src/helloworld.c:210:7: error: too many arguments to function 'strcpy'
+       strcpy(TlcdReg_downline, "Setting Time    ",16);
+       ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:688:29: error: 'temp_dwon' undeclared (first use in this function)
+     else if(temp_up == 0 && temp_dwon == 1){
+                             ^
+../src/helloworld.c:688:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:696:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:697:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:719:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:724:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:724:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:725:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:725:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:725:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:726:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:45:54 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:154:5: error: too many arguments to function 'strcpy'
+     strcpy(TlcdReg_downline, "Setting Time    ",16);
+     ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:688:29: error: 'temp_dwon' undeclared (first use in this function)
+     else if(temp_up == 0 && temp_dwon == 1){
+                             ^
+../src/helloworld.c:688:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:696:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:697:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:719:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:724:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:724:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:725:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:725:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:725:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:726:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:45:59 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:688:29: error: 'temp_dwon' undeclared (first use in this function)
+     else if(temp_up == 0 && temp_dwon == 1){
+                             ^
+../src/helloworld.c:688:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:696:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:697:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:719:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:724:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:724:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:725:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:725:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:725:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:726:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:54:51 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:730:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:731:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:753:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:758:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:758:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:759:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:759:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:759:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:760:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:57:01 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:730:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:731:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:753:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:758:2: error: expected identifier or '(' before '}' token
+  }
+  ^
+In file included from ../src/helloworld.c:11:0:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:759:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:759:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:760:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:760:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:760:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:761:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:57:04 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:730:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:731:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:753:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:759:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:759:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:760:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:760:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:760:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:761:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:58:18 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:734:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:735:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:757:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:763:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:763:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:764:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:764:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:764:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:765:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:58:39 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c: In function 'DeviceDriverHandler':
+../src/helloworld.c:734:5: error: break statement not within loop or switch
+     break;
+     ^
+../src/helloworld.c:735:4: error: case label not within a switch statement
+    case 3:
+    ^
+../src/helloworld.c:757:5: error: break statement not within loop or switch
+     break;
+     ^
+In file included from ../src/helloworld.c:11:0:
+../src/helloworld.c: At top level:
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:14: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^
+../src/helloworld.c:763:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../../ps_termproj_bsp/ps7_cortexa9_0/include/pushbutton.h:35:43: error: expected declaration specifiers or '...' before '(' token
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                           ^
+../src/helloworld.c:763:2: note: in expansion of macro 'PUSHBUTTON_mWriteReg'
+  PUSHBUTTON_mWriteReg(XPAR_PUSHBUTTON_0_S00_AXI_BASEADDR, PUSHBUTTON_S00_AXI_SLV_REG0_OFFSET,0);
+  ^
+../src/helloworld.c:764:2: warning: data definition has no type or storage class [enabled by default]
+  InterruptProcessed = TRUE;
+  ^
+../src/helloworld.c:764:2: warning: type defaults to 'int' in declaration of 'InterruptProcessed' [-Wimplicit-int]
+../src/helloworld.c:764:2: error: conflicting type qualifiers for 'InterruptProcessed'
+../src/helloworld.c:60:21: note: previous definition of 'InterruptProcessed' was here
+ volatile static int InterruptProcessed = FALSE;
+                     ^
+../src/helloworld.c:765:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] 오류 1
+19:59:35 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41336	   2976	  22660	  66972	  1059c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:00:11 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:00:41 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:06:57 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41388	   2976	  22660	  67024	  105d0	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:07:28 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:07:50 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:10:27 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41832	   2976	  22660	  67468	  1078c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:10:29 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:10:53 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:12:07 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41832	   2976	  22660	  67468	  1078c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:12:10 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:12:35 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:17:13 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41856	   2976	  22660	  67492	  107a4	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:17:16 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:17:36 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:18:21 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:18:27 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:21:39 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:152:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Time    ");
+     ^
+../src/helloworld.c:194:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Date    ");
+     ^
+make: *** [src/helloworld.o] 오류 1
+20:22:19 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:152:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Time    ");
+     ^
+../src/helloworld.c:194:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Date    ");
+     ^
+make: *** [src/helloworld.o] 오류 1
+20:23:08 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:152:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Time    ");
+     ^
+../src/helloworld.c:194:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Date    ");
+     ^
+make: *** [src/helloworld.o] 오류 1
+20:24:49 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:152:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Time    ");
+     ^
+../src/helloworld.c:194:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Date    ");
+     ^
+make: *** [src/helloworld.o] 오류 1
+20:26:39 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:194:5: error: too few arguments to function 'strncpy'
+     strncpy(TlcdReg_downline, "Setting Date    ");
+     ^
+make: *** [src/helloworld.o] 오류 1
+20:26:46 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41664	   2976	  22660	  67300	  106e4	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:26:51 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:27:20 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:31:00 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41664	   2976	  22660	  67300	  106e4	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:31:03 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:31:39 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:31:59 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:32:21 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:37:31 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41012	   2976	  22660	  66648	  10458	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:38:47 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:39:51 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:40:08 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:40:41 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:112:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41012	   2976	  22660	  66648	  10458	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:40:44 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:41:05 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:47:55 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:112:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41032	   2976	  22660	  66668	  1046c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+20:48:06 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+20:48:59 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+11:02:06 **** Auto Build of project ps_termproj_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pushbutton..."
+"Running Make libs in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pwm_gen..."
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling seven_seg..."
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling textlcd..."
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+11:02:20 **** Auto Build of project ps_termproj_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pushbutton..."
+"Running Make libs in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pwm_gen..."
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling seven_seg..."
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling textlcd..."
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+11:02:34 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:112:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41032	   2976	  22660	  66668	  1046c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+11:02:57 **** Clean-only build of project ps_termproj_bsp ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+11:02:57 **** Build of project ps_termproj_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/pushbutton_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pushbutton_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pushbutton..."
+"Running Make libs in ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/pwm_gen_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling pwm_gen..."
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/seven_seg_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling seven_seg..."
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/textlcd_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/textlcd_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling textlcd..."
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+11:03:09 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:112:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41032	   2976	  22660	  66668	  1046c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+11:05:07 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:2: warning: "/*" within comment [-Wcomment]
+  /*
+ ^
+../src/helloworld.c:115:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41032	   2976	  22660	  66668	  1046c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+11:05:33 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41032	   2976	  22660	  66668	  1046c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+11:07:42 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+11:07:44 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+11:08:09 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+11:12:00 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41032	   2976	  22660	  66668	  1046c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+13:00:58 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:135:4: error: expected ')' before '{' token
+    {
+    ^
+../src/helloworld.c:144:3: error: expected expression before '}' token
+   }
+   ^
+make: *** [src/helloworld.o] 오류 1
+13:01:03 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40980	   2976	  22660	  66616	  10438	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+13:01:06 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+13:01:24 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+13:02:15 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40956	   2976	  22660	  66592	  10420	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+13:02:22 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+13:02:40 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+13:20:56 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+13:21:04 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:10:26 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:113:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40956	   2976	  22660	  66592	  10420	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+15:14:19 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:114:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41280	   2976	  22660	  66916	  10564	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+15:14:32 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:14:58 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:29:43 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:114:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41284	   2976	  22660	  66920	  10568	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+15:29:47 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:29:56 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:30:16 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:33:11 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:114:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40984	   2976	  22660	  66620	  1043c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+15:33:20 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:33:38 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:43:32 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:114:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40984	   2976	  22660	  66620	  1043c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+15:43:41 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:44:03 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:45:18 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:114:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41064	   2976	  22660	  66700	  1048c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+15:45:20 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:45:40 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:49:43 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:50:04 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:52:04 **** Auto Build of configuration Debug for project ps_termproj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ps_termproj_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:115:14: warning: 'SendBuffer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    IicStatus = ReadRTC(Iic, SendBuffer, RecvBuffer, 0x02, 7);
+              ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps_termproj.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ps_termproj_bsp/ps7_cortexa9_0/lib -o "ps_termproj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_termproj.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ps_termproj.elf  |tee "ps_termproj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41448	   2976	  22660	  67084	  1060c	ps_termproj.elf
+'Finished building: ps_termproj.elf.size'
+' '
+15:52:10 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:52:30 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:52:38 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:53:01 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:54:30 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+15:54:56 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+16:33:13 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
+16:33:38 **** Incremental Build of configuration Debug for project ps_termproj ****
+make all 
+make: `all'를 위해 할 일이 없습니다
